@@ -12,6 +12,7 @@ public class AdScript : MonoBehaviour {
     }
   }
   public void ShowAd () {
+    
     var showOptions = new ShowOptions {
       resultCallback = HandleShowResult
     };
