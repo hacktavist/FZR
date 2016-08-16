@@ -4,7 +4,13 @@ using System.Collections;
 
 public class AdScript : MonoBehaviour {
 
+  public string gameId;
 
+  void Start(){
+    if (Advertisement.isSupported) {
+      Advertisement.Initialize (gameId);
+    }
+  }
   public void ShowAd () {
     var showOptions = new ShowOptions {
       resultCallback = HandleShowResult
