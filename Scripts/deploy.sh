@@ -6,8 +6,8 @@ echo "$(pwd)"
 cd $(pwd)/Build
 
 mkdir fzr
-mv $(pwd)/windows/$project.exe fzr
-mv $(pwd)/windows/$project_Data fzr
+mv $(pwd)/windows/"$project".exe fzr
+mv $(pwd)/windows/"$project_Data" fzr
 
 echo "$(pwd)"
 zip -r fzr.zip fzr
