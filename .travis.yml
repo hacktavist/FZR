@@ -9,3 +9,7 @@ install:
 script:
 - ./Scripts/build.sh
 - ./Scripts/deploy.sh
+
+branches:
+  only:
+    - master
