@@ -1,5 +1,5 @@
 project = FZR
-FILENAME=“Users/travis/build/hacktavist/FZR/Build/”
+FILENAME=“Users/travis/build/hacktavist/FZR/Build/*”
 
 zip -r fzr.zip $FILENAME
 
