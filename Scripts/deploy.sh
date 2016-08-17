@@ -4,8 +4,11 @@ echo "$FILENAME"
 echo "$(pwd)"
 
 cd $(pwd)/Build
+
+mkdir fzr
+mv $(pwd)/windows/* fzr
 echo "$(pwd)"
-zip -r fzr.zip $(pwd)/Build/windows/*
+zip -r fzr.zip fzr#$(pwd)/windows/*
 
 echo "Deploy to Itch"
 wget http://dl.itch.ovh/butler/darwin-amd64/head/butler
