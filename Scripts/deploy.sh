@@ -1,4 +1,4 @@
-FILENAME="$(pwd)"
+FILENAME=“Users/travis/build/hacktavist/FZR/Build/windows”
 
 zip -r "$FILENAME.zip" $FILENAME
 
