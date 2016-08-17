@@ -2,6 +2,7 @@ project = FZR
 FILENAME=“Users/travis/build/hacktavist/FZR/Build/*”
 echo "$FILENAME"
 echo "$(pwd)"
+chmod a+rwx $(pwd)/Build/*
 mv $(pwd)/Build/* /proj/
 zip -r fzr.zip /proj/
 
