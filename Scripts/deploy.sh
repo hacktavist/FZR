@@ -1,6 +1,6 @@
 project = FZR
 FILENAME=“Users/travis/build/hacktavist/FZR/Build/*”
-
+echo "$FILENAME"
 zip -r fzr.zip $FILENAME
 
 echo "Deploy to Itch"
