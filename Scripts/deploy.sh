@@ -11,7 +11,7 @@ mv $(pwd)/windows/$project_data fzr
 
 echo "$(pwd)"
 zip -r fzr.zip fzr
-#$(pwd)/windows/*
+
 
 echo "Deploy to Itch"
 wget http://dl.itch.ovh/butler/darwin-amd64/head/butler
