@@ -1,7 +1,6 @@
 project ="FZR"
-FILENAME=“./windows/*”
-echo "$FILENAME"
-echo "$(pwd)"
+
+
 
 cd $(pwd)/Build
 
@@ -19,7 +18,7 @@ chmod +x butler
 touch butler_creds
 echo -n $ITCH_API_KEY > butler_creds
 
-./butler push fzr.zip hacktavist/testing-travisci-deployment:windows -i butler_creds
+./butler push fzr.zip hacktavist/fzr:windows -i butler_creds
 
 echo "Cleaning"
 
