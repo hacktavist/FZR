@@ -2,7 +2,7 @@ project = FZR
 FILENAME=“Users/travis/build/hacktavist/FZR/Build/*”
 echo "$FILENAME"
 echo "$(pwd)"
-zip -r fzr.zip $FILENAME
+zip -r fzr.zip $(pwd)/Build/*
 
 echo "Deploy to Itch"
 wget http://dl.itch.ovh/butler/darwin-amd64/head/butler
