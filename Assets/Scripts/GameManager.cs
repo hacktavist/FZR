@@ -127,21 +127,14 @@ public class GameManager : MonoBehaviour {
 
   public void GameWon() {
 
-    StartCoroutine (ShowAds ());
-
-  }
-  IEnumerator ShowAds(){
     levelText.text = "You have become so fat \nyou have busted your gut. \nCongrats!";
     levelImage.SetActive(true);
     enabled = false;
-    yield return new WaitForSeconds (2f);
-    if (wins % 5 == 0) {
-      GameObject.Find ("AdManager").GetComponent<AdScript> ().ShowAd ();
-    }
+
 
     Invoke("RestartGame", winOrLoseDelay);
-
   }
+
   public void GameOver() {
     levelText.text = "You became famished during feast " + lvl;
     levelImage.SetActive(true);
