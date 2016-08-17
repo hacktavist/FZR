@@ -6,9 +6,12 @@ echo "$(pwd)"
 cd $(pwd)/Build
 
 mkdir fzr
-mv $(pwd)/windows/* fzr
+mv $(pwd)/windows/$project.exe fzr
+mv $(pwd)/windows/$project_Data fzr
+
 echo "$(pwd)"
-zip -r fzr.zip fzr#$(pwd)/windows/*
+zip -r fzr.zip fzr
+#$(pwd)/windows/*
 
 echo "Deploy to Itch"
 wget http://dl.itch.ovh/butler/darwin-amd64/head/butler
