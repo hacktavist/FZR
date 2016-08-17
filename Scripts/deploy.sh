@@ -1,11 +1,10 @@
 project = "FZR"
 
 
-cd $(pwd)/Build
+
 
 mkdir fzr
-mv $(pwd)/windows/$project.exe fzr
-mv $(pwd)/windows/$project_Data fzr
+
 
 
 zip -r fzr.zip fzr
