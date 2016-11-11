@@ -1,11 +1,10 @@
 #! /bin/sh
 
 BASE_URL=http://netstorage.unity3d.com/unity
-HASH=e87ab445ead0
-VERSION=5.3.2f1
-#HASH=a6d8d714de6f
-#VERSION=5.4.0f3
-
+# HASH=e87ab445ead0
+# VERSION=5.3.2f1
+HASH=b7e030c65c9b
+VERSION=5.4.2f2
 download() {
   file=$1
   url="$BASE_URL/$HASH/$package"
