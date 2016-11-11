@@ -1,0 +1,1 @@
+https://travis-ci.org/hacktavist/FZR.svg?branch=master
