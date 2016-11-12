@@ -5,7 +5,7 @@ cd $(pwd)/Build
 
 mkdir fzr
 echo mv $(pwd)/windows/$project.exe fzr
-echo mv $(pwd)/windows/$project_Data fzr
+echo mv $(pwd)/windows/"$project_Data" fzr
 mv $(pwd)/windows/$project.exe fzr
 mv $(pwd)/windows/$project_Data fzr
 
