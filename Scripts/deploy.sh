@@ -3,12 +3,12 @@ project="FZR"
 
 
 
-mkdir fzr
-mv $(pwd)/windows/$project.exe fzr
-mv $(pwd)/windows/$project_Data fzr
+mkdir $project
+mv $(pwd)/windows/$project.exe $project
+mv $(pwd)/windows/$project_Data $project
 
 
-zip -r fzr.zip fzr
+zip -r $project.zip $project
 
 
 echo "Deploy to Itch"
@@ -17,7 +17,7 @@ chmod +x butler
 touch butler_creds
 echo -n $ITCH_API_KEY > butler_creds
 
-./butler push fzr.zip hacktavist/testing-travisci-deployment:windows -i butler_creds
+./butler push $project.zip hacktavist/testing-travisci-deployment:windows -i butler_creds
 
 echo "Cleaning"
 
