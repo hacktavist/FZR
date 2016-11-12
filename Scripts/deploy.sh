@@ -1,7 +1,7 @@
 project="FZR"
 
 
-
+cd $(pwd)/Build
 
 mkdir fzr
 mv $(pwd)/windows/$project.exe fzr
